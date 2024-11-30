@@ -1,8 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
+<head> <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportSpotter</title>
+    <style>
+        /* Mengatur tampilan loading screen */
+        #loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #333;
+            z-index: 9999;
+            animation: fadeOut 3s forwards; /* Animasi untuk loading screen */
+        }
+
+        /* Efek fadeOut untuk menghilangkan loading screen */
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                visibility: hidden; /* Setelah fade out, sembunyikan */
+            }
+        }
+
+        /* Konten utama halaman */
+        #main-content {
+            display: block; /* Konten utama selalu ditampilkan */
+            opacity: 0;
+            animation: fadeIn 3s 3s forwards; /* Animasi fade in setelah 3 detik */
+        }
+
+        /* Efek fadeIn untuk konten utama */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spot Your Sports</title>
     <!-- Font Awesome -->
@@ -193,6 +240,17 @@ Resources        /* General Styles */
 
     </style>    
 </div><body>
+    <div id="loading-screen">
+        <p>Please use Laptop!</p>
+    </div>
+
+    <!-- Konten utama halaman -->
+    <div id="main-content">
+        <!-- Konten asli dari halaman Anda akan ada disini -->
+        <h1>Selamat datang di SportSpotter!</h1>
+        <p>Konten utama website SportSpotter ada di sini.</p>
+        <!-- Pastikan seluruh isi halaman Anda dimasukkan di sini -->
+    </div>
     <div class="logo-container">
         <img src="Link.png" alt="logo" class="logo">
     </div>
