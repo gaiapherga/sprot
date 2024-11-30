@@ -12,53 +12,6 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
     <style>
-        html, body {
-  background: black;
-  height: 100%;
-  width: 100%;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.phone {
-  height: 50px;
-  width: 100px;
-  border: 3px solid white;
-  border-radius: 10px;
-  animation: rotate 1.5s ease-in-out infinite alternate;
-  /* display: none; */
-}
-
-.message {
-  color: white;
-  font-size: 1em;
-  margin-top: 40px;
-  /* display: none; */
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg)
-  }
-  50% {
-    transform: rotate(-90deg)
-  }
-  100% {
-    transform: rotate(-90deg)
-  }
-}
-
-@media only screen and (max-device-width: 812px) and (orientation: landscape) {
-  .phone, .message {
-    display: block;
-  }
-}
-        
 Resources        /* General Styles */
         body {
             margin: 0;
@@ -239,11 +192,6 @@ Resources        /* General Styles */
         }
 
     </style>    
-</head>
-<div class="phone">
-</div>
-<div class="message">
-  Please rotate your device!
 </div><body>
     <div class="logo-container">
         <img src="Link.png" alt="logo" class="logo">
